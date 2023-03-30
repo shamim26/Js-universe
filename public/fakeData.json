@@ -6,16 +6,16 @@
     "blogTitle": "CSS Grid Handbook, Complete Guide to Grid Containers and Grid Items",
     "coverImage": "https://images.unsplash.com/photo-1581273154768-0a9a16887d2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1212&q=80",
     "readTime": "07",
-    "publishDate": "Mar 16"
+    "publishDate": "Mar 16(16 Days ago)"
   },
   {
     "id": "02",
-    "authorName": "Md. Kamal",
-    "authorThumb": "https://www.freecodecamp.org/news/content/images/size/w150/2022/05/Screenshot_20220516-112131_Gallery.jpg",
+    "authorName": "Jenna",
+    "authorThumb": "https://cdn.hackr.io/uploads/users/medium/jennainouye.png",
     "blogTitle": "How to replace links in a text with Anchor Tags using JavaScript",
     "coverImage": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "readTime": "10",
-    "publishDate": "Mar 23"
+    "publishDate": "Mar 23(7 Days ago)"
   },
   {
     "id": "03",
@@ -24,7 +24,7 @@
     "blogTitle": "Learn React by Building a Mortgage Calculator",
     "coverImage": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "readTime": "08",
-    "publishDate": "Mar 19"
+    "publishDate": "Mar 19(11 Days ago)"
   },
   {
     "id": "04",
@@ -33,6 +33,6 @@
     "blogTitle": "Use Vite to Speed Up Web Development",
     "coverImage": "https://res.cloudinary.com/practicaldev/image/fetch/s--XNA9f4OE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/i0tgmgk76qyfha15i4qv.png",
     "readTime": "15",
-    "publishDate": "Feb 16"
+    "publishDate": "Feb 16(1 Month ago)"
   }
 ]
