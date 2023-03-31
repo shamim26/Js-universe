@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
 import SideMenu from "../SideMenu/SideMenu";
+import swal from 'sweetalert';
 
 const Main = () => {
   const [blogs, setBlogs] = useState([]);
@@ -21,10 +22,14 @@ const Main = () => {
     setReadTime(inTime);
   }, [inTime]);
 
-  const handleBookmark =(title)=>{
-    const newArr = [...blogTitle , title]
-    setBlogTitle(newArr)
-  }
+  const handleBookmark = (title) => {
+    if (blogTitle.includes(title)) {
+      swal("Warning", "You Have Already Bookmarked This Blog", "warning");
+    } else {
+      const newArr = [...blogTitle, title];
+      setBlogTitle(newArr);
+    }
+  };
 
   return (
     <div className="grid md:grid-cols-custom gap-6">
@@ -33,7 +38,7 @@ const Main = () => {
           <Blog
             blog={blog}
             handleReadTime={handleReadTime}
-            handleBookmark = {handleBookmark}
+            handleBookmark={handleBookmark}
             key={blog.id}
           ></Blog>
         ))}

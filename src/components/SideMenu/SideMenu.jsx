@@ -3,7 +3,7 @@ import Bookmark from "../Bookmark/Bookmark";
 
 const SideMenu = (props) => {
   const bookmarked = props.title;
-  console.log();
+  console.log(bookmarked);
   return (
     <div>
       <div className="border border-violet-600 bg-violet-100 rounded-lg py-5 px-3 mb-6">
