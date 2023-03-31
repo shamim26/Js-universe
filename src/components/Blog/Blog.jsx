@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 
 const Blog = (props) => {
-  console.log(props);
+  
   const {
     authorName,
     authorThumb,
@@ -12,6 +12,8 @@ const Blog = (props) => {
     publishDate,
     readTime,
   } = props.blog;
+
+  const handleReadTime = props.handleReadTime;
   return (
     <div className="blog">
       <img className="rounded-lg" src={coverImage} alt="" />
@@ -34,7 +36,7 @@ const Blog = (props) => {
           </div>
         </div>
         <h1 className="blog-title text-2xl md:text-4xl font-bold">{blogTitle}</h1>
-        <button className="text-xl font-semibold text-violet-600">
+        <button onClick={() => handleReadTime(readTime)} className="text-xl font-semibold text-violet-600">
           <u>Mark as read</u>
         </button>
       </div>
