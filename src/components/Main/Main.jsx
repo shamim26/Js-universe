@@ -6,6 +6,8 @@ const Main = () => {
   const [blogs, setBlogs] = useState([]);
   const [readTime, setReadTime] = useState(0);
   const [inTime, setInTime] = useState(0);
+  const [blogTitle, setBlogTitle] = useState([]);
+
   useEffect(() => {
     fetch("fakeData.json")
       .then((res) => res.json())
@@ -18,6 +20,12 @@ const Main = () => {
   useEffect(() => {
     setReadTime(inTime);
   }, [inTime]);
+
+  const handleBookmark =(title)=>{
+    const newArr = [...blogTitle , title]
+    setBlogTitle(newArr)
+  }
+
   return (
     <div className="grid md:grid-cols-custom gap-6">
       <div className="blogs">
@@ -25,13 +33,14 @@ const Main = () => {
           <Blog
             blog={blog}
             handleReadTime={handleReadTime}
+            handleBookmark = {handleBookmark}
             key={blog.id}
           ></Blog>
         ))}
       </div>
 
       <div className="side-menu">
-        <SideMenu readTime={readTime}></SideMenu>
+        <SideMenu readTime={readTime} title={blogTitle}></SideMenu>
       </div>
     </div>
   );
