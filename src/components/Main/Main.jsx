@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Blog from "../Blog/Blog";
+import BlogPost from "../BlogPost/BlogPost";
 import SideMenu from "../SideMenu/SideMenu";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const Main = () => {
   const [blogs, setBlogs] = useState([]);
@@ -35,12 +35,12 @@ const Main = () => {
     <div className="grid md:grid-cols-custom gap-6">
       <div className="blogs">
         {blogs.map((blog) => (
-          <Blog
+          <BlogPost
             blog={blog}
             handleReadTime={handleReadTime}
             handleBookmark={handleBookmark}
             key={blog.id}
-          ></Blog>
+          ></BlogPost>
         ))}
       </div>
 
