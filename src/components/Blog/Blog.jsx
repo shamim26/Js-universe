@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 
 const Blog = (props) => {
+  console.log(props);
   const {
     authorName,
     authorThumb,
@@ -16,10 +17,10 @@ const Blog = (props) => {
       <img className="rounded-lg" src={coverImage} alt="" />
       <div className="blog-body space-y-9 py-8 mb-8 border-b border-gray-300">
         <div className="author">
-          <img className="w-14 rounded-full" src={authorThumb} alt="" />
+          <img className="author-image w-14 rounded-full" src={authorThumb} alt="" />
           <div className="author-details flex justify-between items-center">
             <div>
-              <h3 className="font-semibold text-2xl">{authorName}</h3>
+              <h3 className="author-name font-semibold text-xl md:text-2xl">{authorName}</h3>
               <p className="text-gray-500 font-semibold">{publishDate}</p>
             </div>
             <div>
@@ -32,7 +33,7 @@ const Blog = (props) => {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl font-bold">{blogTitle}</h1>
+        <h1 className="blog-title text-2xl md:text-4xl font-bold">{blogTitle}</h1>
         <button className="text-xl font-semibold text-violet-600">
           <u>Mark as read</u>
         </button>

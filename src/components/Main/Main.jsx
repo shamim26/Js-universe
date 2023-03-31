@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
+import Time from "../Time/Time";
+
 
 const Main = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,15 +12,15 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
-      <div className="blogs ">
+    <div className="grid md:grid-cols-custom gap-6">
+      <div className="blogs">
         {blogs.map((blog) => (
           <Blog blog={blog} key={blog.id}></Blog>
         ))}
       </div>
 
       <div className="side-menu">
-        
+        <Time></Time>
       </div>
     </div>
   );
